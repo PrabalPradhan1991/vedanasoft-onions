@@ -17,7 +17,7 @@ class LoginController extends Controller
     }
 
     public function postLogin()
-    {
+    { 
         $input = request()->all();
         $check_if_user_active = \App\User::where('email', $input['email'])->first();
 
